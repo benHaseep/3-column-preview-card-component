@@ -1,0 +1,76 @@
+:root {
+  --sedan-color: hsl(31, 77%, 52%);
+  --suvs-color: hsl(184, 100%, 22%);
+  --luxury-color: hsl(179, 100%, 13%);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: fit-content;
+  display: flex;
+  margin: 100px auto;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+}
+
+.container .column {
+  max-width: 300px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.container .column * {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.container .column img {
+  margin-top: 50px;
+}
+.container .column h2 {
+  margin-top: 30px;
+  color: hsl(0, 0%, 95%);
+  font-size: 35px;
+}
+.container .column p {
+  margin-top: 20px ;
+}
+.container .column button {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.container .column button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans {
+  background-color: var(--sedan-color);
+}
+.container .sedans button {
+  color: var(--sedan-color);
+}
+.suvs {
+  background-color: var(--suvs-color);
+}
+.container .suvs button {
+  color: var(--suvs-color);
+}
+
+.luxury {
+  background-color: var(--luxury-color);
+}
+.container .luxury button {
+  color: var(--luxury-color);
+}
+
+/* === Footer === */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

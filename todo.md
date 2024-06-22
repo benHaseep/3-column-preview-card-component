@@ -1,0 +1,3 @@
+- [ ] Border radious for the container
+- [ ] change fonts
+- [ ] Handle README.md
