@@ -1,3 +1,3 @@
-- [ ] Border radious for the container
-- [ ] change fonts
+- [x] Border radious for the container
+- [x] change fonts
 - [ ] Handle README.md

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+/* font-family: "Lexend Deca", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+/* font-family: "Big Shoulders Display", sans-serif; */
+
 :root {
   --sedan-color: hsl(31, 77%, 52%);
   --suvs-color: hsl(184, 100%, 22%);
@@ -8,12 +14,13 @@
   margin: 0;
 }
 
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
 .container {
   max-width: fit-content;
   display: flex;
   margin: 100px auto;
-  background-color: hsl(0, 0%, 95%);
-  border-radius: 20px;
 }
 
 .container .column {
@@ -24,16 +31,25 @@
   margin-left: 40px;
   margin-right: 40px;
 }
+.container .column:first-child {
+  border-radius: 20px 0 0 20px;
+}
+.container .column:last-child {
+  border-radius: 0 20px 20px 0;
+}
 .container .column img {
   margin-top: 50px;
 }
 .container .column h2 {
   margin-top: 30px;
   color: hsl(0, 0%, 95%);
-  font-size: 35px;
+  font-size: 40px;
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
 }
 .container .column p {
-  margin-top: 20px ;
+  margin-top: 20px;
+  font-size: 15px;
 }
 .container .column button {
   margin-top: 70px;
